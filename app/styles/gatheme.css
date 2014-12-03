@@ -19,8 +19,8 @@ body {
 .homepage-banner {
 	background-image: url("../images/homepage_banner.jpg");
 	background-repeat: no-repeat;
-	background-position: center center;
-	padding: 200px 20px 10px 20px;s
+	background-position: center center
+;	padding: 200px 20px 10px 20px;s
 }
 
 .homepage-banner p {
@@ -31,11 +31,10 @@ body {
 
 .homepage-banner #text-large {
 	font-size: 50px;
-	line-height: 10px; 
+	margin-bottom: 0px;
 }
 
 .homepage-banner #text-small {
 	font-size: 36px;
-	padding-left: 10px;
 
 }
