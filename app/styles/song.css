@@ -22,7 +22,7 @@
   .sidebar {
     position: fixed;
     top: 51px;
-    bottom: 0;
+    bottom: 60px;
     left: 0;
     z-index: 1000;
     display: block;
