@@ -1,0 +1,30 @@
+/* Custom Font Montserrrat. Also available on Google Fonts */
+@font-face {
+	font-family: Montserrat;
+	src: url("../fonts/Montserrat-Regular.otf");
+}
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+	font-family: Montserrat, sans-serif;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+.homepage-banner {
+	background-image: url("../images/homepage_banner.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+
+}
+
+.homepage-banner #text-large {
+	color:white;
+	font-size: 60px;
+	line-height: 15px; 
+}
+
+.homepage-banner #text-small {
+	color:white;
+	font-size: 39px;
+}

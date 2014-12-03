@@ -1,8 +1,8 @@
-var app = angular.module('indexApp', [ ]);
+var app = angular.module('indexApp', ['ui.bootstrap']);
 
 app.directive('ganavbar', function() {
 	return {
 		restrict: 'E', // E = Element, A = Attribute, C = Class, M = Comment
-		templateUrl: 'layout/header.html'
+		templateUrl: 'views/header.html'
 	};
 });
