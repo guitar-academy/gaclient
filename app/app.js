@@ -1,6 +1,8 @@
-var app = angular.module('ga', ['ui.bootstrap']);
+var app = angular.module('indexApp', [ ]);
 
-app.controller('MainCtrl', function($scope) {
-	$scope.name = 'World';
+app.directive('ganavbar', function() {
+	return {
+		restrict: 'E', // E = Element, A = Attribute, C = Class, M = Comment
+		templateUrl: 'layout/header.html'
+	};
 });
-
