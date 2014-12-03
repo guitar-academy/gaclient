@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Guitar Academy</title>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+
+<body ng-controller="MainCtrl">
+	<header class="navbar navbar-fixed top navbar-default" id="top" role="banner">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" aria-expanded="false" aria-controls="navbar" ng-init="navCollapse = true" ng-click="navCollapse = !navCollapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">
+					Guitar Academy
+				</a>
+			</div>
+
+			<nav class="collapse navbar-collapse" role="navigation" ng-class="">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="/">
+							Home
+						</a>
+					</li>
+					<li>
+						<a href="/">
+							Freeroam
+						</a>
+					</li>
+					<li>
+						<a href="/">
+							Warmup
+						</a>
+					</li>
+					<li>
+						<a href="/">
+							Contact Us
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main role="main" class="masthead">
+		<div class="jumbotron">
+			<div class="container">
+				<h1>Hello, world!</h1>
+				<p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+				<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
+			</div>
+		</div>
+
+		<div class="container">
+			<!-- Example row of columns -->
+			<div class="row">
+				<div class="col-md-4">
+					<h2>Train!</h2>
+					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+					<p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+				</div>
+				<div class="col-md-4">
+					<h2>Freeroam!!</h2>
+					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+					<p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+				</div>
+				<div class="col-md-4">
+					<h2>Achievements!!!</h2>
+					<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+					<p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+				</div>
+			</div>
+
+		</main>
+
+		<hr>
+		<!-- From http://getbootstrap.com/examples/sticky-footer-navbar/ (bootstrap template for sticky footer) -->
+		<footer class="footer">
+			<div class="container">
+				<p class="text-muted">Copyright &copy; 2014 Guitar Academy.</p>
+			</div>
+		</footer>
+	</div> <!-- /container -->
+
+	<script type="text/javascript" src="js/angular.js"></script>
+	<script type="text/javascript" src="js/ui-bootstrap-tpls-0.12.0.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
