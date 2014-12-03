@@ -4,6 +4,11 @@
 	src: url("../fonts/Montserrat-Regular.otf");
 }
 
+@font-face {
+	font-family: Montserrat Light;
+	src: url("../fonts/Montserrat-Light.otf");
+}
+
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
 	font-family: Montserrat, sans-serif;
@@ -15,16 +20,22 @@ body {
 	background-image: url("../images/homepage_banner.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;
+	padding: 200px 20px 10px 20px;s
+}
 
+.homepage-banner p {
+	color:#fefefe;
+	font-family: Montserrat Light, sans-serif;
+	text-shadow: 0px 0px 10px #000000;
 }
 
 .homepage-banner #text-large {
-	color:white;
-	font-size: 60px;
-	line-height: 15px; 
+	font-size: 50px;
+	line-height: 10px; 
 }
 
 .homepage-banner #text-small {
-	color:white;
-	font-size: 39px;
+	font-size: 36px;
+	padding-left: 10px;
+
 }
