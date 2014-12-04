@@ -1,40 +1,40 @@
 /* Custom Font Montserrrat. Also available on Google Fonts */
 @font-face {
-	font-family: Montserrat;
-	src: url("../fonts/Montserrat-Regular.otf");
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat-Regular.otf");
 }
 
 @font-face {
-	font-family: Montserrat Light;
-	src: url("../fonts/Montserrat-Light.otf");
+    font-family: Montserrat Light;
+    src: url("../fonts/Montserrat-Light.otf");
 }
 
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
-	font-family: Montserrat, sans-serif;
-	padding-top: 50px;
-	padding-bottom: 20px;
+    font-family: Montserrat, sans-serif;
+    padding-top: 50px;
+    padding-bottom: 20px;
 }
 
 .homepage-banner {
-	background-image: url("../images/homepage_banner.jpg");
-	background-repeat: no-repeat;
-	background-position: center center
-;	padding: 200px 20px 10px 20px;s
+    background-image: url("../images/homepage_banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center center
+;   padding: 200px 20px 10px 20px;s
 }
 
 .homepage-banner p {
-	color:#fefefe;
-	font-family: Montserrat Light, sans-serif;
-	text-shadow: 0px 0px 10px #000000;
+    color:#fefefe;
+    font-family: Montserrat Light, sans-serif;
+    text-shadow: 0px 0px 10px #000000;
 }
 
 .homepage-banner #text-large {
-	font-size: 50px;
-	margin-bottom: 0px;
+    font-size: 50px;
+    margin-bottom: 0px;
 }
 
 .homepage-banner #text-small {
-	font-size: 36px;
+    font-size: 36px;
 
 }
