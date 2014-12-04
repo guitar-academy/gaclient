@@ -19,22 +19,21 @@ body {
 .homepage-banner {
     background-image: url("../images/homepage_banner.jpg");
     background-repeat: no-repeat;
-    background-position: center center
-;   padding: 200px 20px 10px 20px;s
+    background-position: center center;
+    padding: 200px 20px 10px 20px;s
 }
 
-.homepage-banner p {
+p.banner-text {
     color:#fefefe;
     font-family: Montserrat Light, sans-serif;
     text-shadow: 0px 0px 10px #000000;
 }
 
-.homepage-banner #text-large {
+p.banner-text-large {
     font-size: 50px;
     margin-bottom: 0px;
 }
 
-.homepage-banner #text-small {
+p.banner-text-small {
     font-size: 36px;
-
 }
