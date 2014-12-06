@@ -28,8 +28,16 @@
           <li><a href="">Another song</a></li>
           <li><a href="">More song</a></li>
         </ul>
-      </div>
+      </div><!-- sidebar -->
       <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        <div class="btn-group pull-right" role="group" ng-controller="ScoreViewController as SVCtrl">
+          <button type="button" class="btn {{SVCtrl.score.htmlClass}}" ng-click="SVCtrl.toggle(SVCtrl.score)">
+            Score
+          </button>
+          <button type="button" class="btn {{SVCtrl.tab.htmlClass}}" ng-click="SVCtrl.toggle(SVCtrl.tab)">
+            Tab
+          </button>
+        </div>
         <h1 class="page-header">WarmUp/FreeRoam</h1>
         <p>Description here</p>
         <p>Score here</p>
@@ -46,29 +54,13 @@
             <p class="text-muted">Copyright &copy; 2014 Guitar Academy.</p>
           </div>
         </footer>
-      </div>
+      </div><!-- main -->
     </div><!-- row -->
   </div><!-- container-fluid -->
 
-  <div class="row navbar-fixed-bottom bottom-widget">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10">
-          Placeholder for Metronome controller and stuff
-        </div>
-        <div class="col-md-2">
-          <div class="btn-group" role="group" ng-controller="ScoreViewController as SVCtrl">
-            <button type="button" class="btn {{SVCtrl.score.htmlClass}}" ng-click="SVCtrl.toggle(SVCtrl.score)">
-              Score
-            </button>
-            <button type="button" class="btn {{SVCtrl.tab.htmlClass}}" ng-click="SVCtrl.toggle(SVCtrl.tab)">
-              Tab
-            </button>
-          </div>
-        </div>
-      </div> <!-- row -->
-    </div> <!-- container -->
-  </div> <!-- widget-fixed-bottom -->
+  <div class="navbar-fixed-bottom bottom-widget">
+    Placeholder for Metronome controller and stuff
+  </div>
 
   <script type="text/javascript" src="scripts/angular.js"></script>
   <script type="text/javascript" src="scripts/ui-bootstrap-tpls-0.12.0.js"></script>
