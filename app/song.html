@@ -58,8 +58,23 @@
     </div><!-- row -->
   </div><!-- container-fluid -->
 
-  <div class="navbar-fixed-bottom bottom-widget">
-    Placeholder for Metronome controller and stuff
+  <div class="navbar-fixed-bottom bottom-widget" ng-controller="MetronomeController as Metronome">
+    <div class="col-xs-3 col-md-2">
+      Tempo: {{Metronome.tempo}} BPM
+    </div>
+    <div class="col-xs-7 col-md-8">
+      <input id="slider" ng-model="Metronome.tempo" type="range" min="30" max="160" step="1"> <!-- slider -->
+      <button type="button" class="btn" ng-click="Metronome.decrementTempo()">
+        <span class="glyphicon glyphicon-minus"></span> <!-- decrement tempo -->
+      </button>
+      <button type="button" class="btn" ng-click="Metronome.incrementTempo()">
+        <span class="glyphicon glyphicon-plus"></span> <!-- increment tempo -->
+      </button>
+      <button type="button" class="btn">
+        <span class="glyphicon glyphicon-{{Metronome.button}}"></span> <!-- start metronome -->
+      </button>
+    </div>
+    <div class="col-xs-2 col-md-2">Metronome</div>
   </div>
 
   <script type="text/javascript" src="scripts/angular.js"></script>
