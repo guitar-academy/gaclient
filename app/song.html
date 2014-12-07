@@ -70,7 +70,7 @@
       <button type="button" class="btn" ng-click="Metronome.incrementTempo()">
         <span class="glyphicon glyphicon-plus"></span> <!-- increment tempo -->
       </button>
-      <button type="button" class="btn">
+      <button type="button" class="btn" ng-click="Metronome.play()">
         <span class="glyphicon glyphicon-{{Metronome.button}}"></span> <!-- start metronome -->
       </button>
     </div>
@@ -80,6 +80,7 @@
   <script type="text/javascript" src="scripts/angular.js"></script>
   <script type="text/javascript" src="scripts/ui-bootstrap-tpls-0.12.0.js"></script>
   <script type="text/javascript" src="scripts/app.js"></script>
+  <script type="text/javascript" src="scripts/metronome.js"></script>
   <script type="text/javascript" src="scripts/song.js"></script>
 </body>
 </html>

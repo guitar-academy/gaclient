@@ -5,7 +5,6 @@
 	var PRESSED = 'btn-primary';
 
 	app.controller('ScoreViewController', function(){
-
 		this.score = {
 			'htmlClass'	: UNPRESSED
 		};
@@ -23,5 +22,27 @@
 			}
 		};
 	});  // ScoreViewController
+
+	app.controller('SideBarController', ['', function(){
+	}]);
+
+	init(); // initialize metronome
+	app.controller('MetronomeController', function(){
+		this.tempo = 100;
+		this.button = 'play';
+
+		this.decrementTempo = function() {
+			this.tempo--;
+		};
+
+		this.incrementTempo = function() {
+			this.tempo++;
+		}
+
+		this.play = function() {
+			this.button = play();
+		}
+
+	});
 
 })();
