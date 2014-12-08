@@ -4,6 +4,9 @@
  *
  */
 
+/**
+ * Constructor
+ */
 function Metronome () {
 }
 
@@ -81,6 +84,14 @@ Metronome.prototype.play = function() {
     }
 }
 
+/**
+ * Initialize the Metronome
+ *
+ * @param {number} noteRes The note resolution.
+ *                         0 or null is 16th note
+ *                         1 is 8th note
+ *                         2 is quarter note
+ */
 Metronome.prototype.init = function(noteRes){
     if (noteRes != null) {
         this.noteResolution = noteRes;
