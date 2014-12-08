@@ -1,3 +1,9 @@
+/*
+ * This metronome-controller is taken from https://github.com/cwilso/metronome
+ * (originally named metronomeworker.js).
+ *
+ */
+
 var timerID=null;
 var interval=100;
 
