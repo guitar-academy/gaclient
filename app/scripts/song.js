@@ -26,21 +26,21 @@
 	app.controller('SideBarController', ['', function(){
 	}]);
 
-	init(); // initialize metronome
 	app.controller('MetronomeController', function(){
-		this.tempo = 100;
+		this.metronome = new Metronome();
+		this.metronome.init(); // initialize metronome
 		this.button = 'play';
 
 		this.decrementTempo = function() {
-			this.tempo--;
+			this.metronome.tempo--;
 		};
 
 		this.incrementTempo = function() {
-			this.tempo++;
+			this.metronome.tempo++;
 		}
 
 		this.play = function() {
-			this.button = play();
+			this.button = this.metronome.play();
 		}
 
 	});

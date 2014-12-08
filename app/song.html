@@ -60,10 +60,10 @@
 
   <div class="navbar-fixed-bottom bottom-widget" ng-controller="MetronomeController as Metronome">
     <div class="col-xs-3 col-md-2">
-      Tempo: {{Metronome.tempo}} BPM
+      Tempo: {{Metronome.metronome.tempo}} BPM
     </div>
     <div class="col-xs-7 col-md-8">
-      <input id="slider" ng-model="Metronome.tempo" type="range" min="30" max="160" step="1"> <!-- slider -->
+      <input id="slider" ng-model="Metronome.metronome.tempo" type="range" min="30" max="160" step="1"> <!-- slider -->
       <button type="button" class="btn" ng-click="Metronome.decrementTempo()">
         <span class="glyphicon glyphicon-minus"></span> <!-- decrement tempo -->
       </button>
