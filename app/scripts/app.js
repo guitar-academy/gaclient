@@ -6,3 +6,11 @@ app.directive('ganavbar', function() {
         templateUrl: 'views/header.html'
     };
 });
+
+app.directive('gafooter', function(){
+	// Runs during compile
+	return {
+		restrict: 'E',
+		templateUrl: 'views/footer.html',
+	};
+});
