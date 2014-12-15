@@ -6,6 +6,11 @@
   overflow: auto; /* Scrollable contents if viewport is narrower than content. */
 }
 
+#slider {
+  width: 200px;
+  display: inline;
+}
+
 /*
  * Sidebar
  */
