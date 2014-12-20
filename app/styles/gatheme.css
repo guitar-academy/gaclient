@@ -37,3 +37,8 @@ p.banner-text-large {
 p.banner-text-small {
     font-size: 36px;
 }
+
+/* Navbar */
+.dropdown-signin {
+    padding: 17px;
+}
