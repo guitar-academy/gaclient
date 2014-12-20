@@ -8,9 +8,9 @@ app.directive('ganavbar', function() {
 });
 
 app.directive('gafooter', function(){
-	// Runs during compile
-	return {
-		restrict: 'E',
-		templateUrl: 'views/footer.html',
-	};
+    // Runs during compile
+    return {
+        restrict: 'E',
+        templateUrl: 'views/footer.html',
+    };
 });
