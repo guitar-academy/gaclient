@@ -23,11 +23,20 @@
               Warmup
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li class="dropdown" dropdown>
+            <a href="#" class="dropdown-toggle" dropdown-toggle>
               Sign In
               <span class="caret"></span>
             </a>
+            <div class="dropdown-menu">
+              <form class="form">
+                <input name="username" type="text" placeholder="Username"
+                class="form-control">
+                <input name="password" type="password" placeholder="Password"
+                class="form-control">
+                <button class="btn">Sign In</button>
+              </form>
+            </div>
           </li>
         </ul>
       </div>
