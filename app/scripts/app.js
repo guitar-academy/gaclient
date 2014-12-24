@@ -1,16 +1,25 @@
-var app = angular.module('indexApp', ['ui.bootstrap']);
+'use strict';
 
-app.directive('ganavbar', function() {
-    return {
-        restrict: 'E', // E = Element, A = Attribute, C = Class, M = Comment
-        templateUrl: 'views/header.html'
-    };
-});
+/**
+ * @ngdoc overview
+ * @name gaclientApp
+ * @description
+ * # gaclientApp
+ *
+ * Main module of the application.
+ */
+angular.module('gaclientApp', [
+    'ngCookies',
+    'ui.router',
+]).config(function($stateProvider, $urlRouterProvider){
+    $urlRouterProvider.otherwise('/');
 
-app.directive('gafooter', function(){
-	// Runs during compile
-	return {
-		restrict: 'E',
-		templateUrl: 'views/footer.html',
-	};
+    $stateProvider.state('song', {
+        url: '/song',
+        templateUrl: "/views/song.html",
+    }).state('home', {
+        url: '',
+        templateUrl: "views/main.html",
+        controller: "MainCtrl",
+    });
 });

@@ -1,0 +1,54 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3 col-md-2 sidebar">
+      <ul class="nav nav-sidebar">
+        <li class="active"><a href="#">Current skill<span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Other skill</a></li>
+        <li><a href="#">Another skill</a></li>
+        <li><a href="#">Yet another skill</a></li>
+      </ul>
+      <ul class="nav nav-sidebar">
+        <li><a href="">Song</a></li>
+        <li><a href="">Song again</a></li>
+        <li><a href="">One more song</a></li>
+        <li><a href="">Another song</a></li>
+        <li><a href="">More song</a></li>
+      </ul>
+    </div><!-- sidebar -->
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+      <div class="btn-group pull-right" role="group" ng-controller="ScoreviewCtrl as SVCtrl">
+        <button type="button" class="btn {{SVCtrl.score.htmlClass}}" ng-click="SVCtrl.toggle(SVCtrl.score)">
+          Score
+        </button>
+        <button type="button" class="btn {{SVCtrl.tab.htmlClass}}" ng-click="SVCtrl.toggle(SVCtrl.tab)">
+          Tab
+        </button>
+      </div>
+      <h1 class="page-header">WarmUp/FreeRoam</h1>
+      <p>Description here</p>
+      <p>Score here</p>
+      <p>TODO:</p>
+      <ul>
+        <li>Rearrange and make the side bar nicer</li>
+      </ul>
+    </div><!-- main -->
+  </div><!-- row -->
+</div><!-- container-fluid -->
+
+<div class="navbar-fixed-bottom bottom-widget" ng-controller="MetronomeCtrl">
+  <div class="col-xs-3 col-md-2">
+    Tempo: {{ MetronomeCtrl.metronome.tempo }} BPM
+  </div>
+  <div class="col-xs-7 col-md-8">
+    <input id="slider" ng-model="MetronomeCtrl.metronome.tempo" type="range" min="30" max="160" step="1"> <!-- slider -->
+    <button type="button" class="btn btn-xs" ng-click="MetronomeCtrl.decrementTempo()">
+      <span class="glyphicon glyphicon-minus"></span> <!-- decrement tempo -->
+    </button>
+    <button type="button" class="btn btn-xs" ng-click="MetronomeCtrl.incrementTempo()">
+      <span class="glyphicon glyphicon-plus"></span> <!-- increment tempo -->
+    </button>
+    <button type="button" class="btn btn-sm" ng-click="MetronomeCtrl.play()">
+      <span class="glyphicon glyphicon-{{MetronomeCtrl.button}}"></span> <!-- start metronome -->
+    </button>
+  </div>
+</div>
